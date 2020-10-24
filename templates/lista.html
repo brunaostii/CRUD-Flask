@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lista de clientes</title>
+    </head>
+    <body>
+        <h1>Lista de Clientes</h1>
+        <hr>
+        <table border="1">
+            <tr>
+                <td>ID</td>
+                <td>Nome</td>
+                <td>Telefone</td>
+                <td>Cpf</td>
+                <td>E-mail</td>
+                <td>Excluir</td>
+                <td>Atualizar</td>
+            </tr>
+            {% for pessoa in pessoas %}
+            <tr>
+                <td>{{pessoa.id}}</td>
+                <td>{{pessoa.nome}}</td>
+                <td>{{pessoa.telefone}}</td>
+                <td>{{pessoa.cpf}}</td>
+                <td>{{pessoa.email}}</td>
+                <td><a href='/apagar/{{pessoa.id}}'>X</a></td>
+                <td><a href="/atualizar/{{pessoa.id}}">o</a></td>
+
+            </tr>
+            {% endfor %}
+        </table>
+        <br>
+        <a href='/index'>"<< Voltar"</a>
+    </body>
+</html>

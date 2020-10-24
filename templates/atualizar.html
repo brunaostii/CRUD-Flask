@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Atualizar cadastro</title>
+    </head>
+    <body>
+        <h1>Atualizar Cadastro</h1>
+        <hr>
+        <form action = "" method = "POST">
+            <table>
+                <tr>
+                    <td>Nome</td>
+                    <td><input type = "text" name="nome" value="{{pessoa.nome}}"></td>
+                </tr>
+                <tr>
+                    <td>Telefone</td>
+                    <td><input type = "text" name="telefone" value="{{pessoa.telefone}}"></td>
+                </tr>
+                <tr>
+                    <td>Cpf</td>
+                    <td><input type = "text" name="cpf" value="{{pessoa.cpf}}"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type = "text" name="email" value="{{pessoa.email}}"></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Atualizar"><br>
+            <a href='/index'>"<< Voltar"</a>
+        </form>
+    </body>
+</html>
