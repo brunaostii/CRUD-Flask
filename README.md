@@ -1,2 +1,2 @@
-# Kumulus
-Crud em python utilizando flask, robô feito em selenium para o teste. 
+# Crud web
+Crud em python utilizando flask, robô feito em selenium para a automatização dos testes. 
